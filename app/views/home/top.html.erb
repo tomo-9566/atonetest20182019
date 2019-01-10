@@ -1,0 +1,36 @@
+<head>
+</head>
+
+<body>
+ <div class = "ue">
+   <div class = "header">
+     <h2 class="header1">ポーカー判定</h2>
+   </div>
+ </div>
+
+　<div class = "contents">
+   <div class ="form">
+
+     <%= form_tag("/home/top", method: :post) do %>
+       <%= label_tag  %>
+       <%= text_field_tag :card %>
+       <%= submit_tag "判定する" %>
+     <% end %>
+   </div>
+
+
+   <div class = "result">
+     <h6>判定結果:</h6>
+     <%# if @noname.present? %>
+<!--       <%#= @noname %>　-->
+<!--       　<%# else %>-->
+       <%= @name %>
+     <%# end %>
+
+   </div>
+
+ </div>
+
+</body>
+
+
